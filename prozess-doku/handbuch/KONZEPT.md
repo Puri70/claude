@@ -15,8 +15,9 @@ Ein gemeinsames Handbuch spart die doppelte Pflege. Voraussetzung ist eine Glied
 | Betriebsprüfung, Wirtschaftsprüfung | „Ist die Buchführung nachvollziehbar und unveränderbar?“ | Teil 1–5 vollständig, Versionen lückenlos |
 | QM / Geschäftsführung | „Sind Prozesse beherrscht und werden sie verbessert?“ | Prozesslandkarte, Rollen, Kontrollen, Änderungshistorie |
 
-Die bisherigen Bausteine bleiben, wie sie sind: Der **Prozess-Interviewer** liefert die
-Arbeitsanweisungen, der **SAP-Schwärzer** die Screenshots. Neu ist der Rahmen drumherum.
+Umsetzung ohne eigene Werkzeuge: Prozess in Teams aufnehmen und dabei erzählen, Copilot Chat macht aus dem
+Transkript die Arbeitsanweisung, Screenshots werden in Paint geschwärzt. Siehe [ANLEITUNG.md](ANLEITUNG.md).
+Ergebnis ist zuerst ein Word-Handbuch ([Vorlage](Handbuch-Buchhaltung-Vorlage.docx)), später SharePoint.
 
 ## Was die GoBD verlangen
 
@@ -64,23 +65,23 @@ Was die GoBD nicht verlangt, das QM aber nützlich macht:
 - **Kennzahlen und Überwachung** (9.1): z. B. Rückfragen im Praxistest (INTENT-01), Abschlussdauer
 - **Verbesserung** (10.3): Fehler und Rückfragen führen zu einer neuen Version
 
-## Lücken der heutigen Bausteine
+## Wo welche Forderung abgedeckt ist
 
-| Forderung | Heute abgedeckt durch | Lücke | Lösung |
-|---|---|---|---|
-| Anwenderdokumentation | Prozess-Interviewer, Teil A | Belege, Ablage, Aufbewahrung je Prozess fehlen | Interviewer fragt jetzt danach (Abschnitt „Belege und Ablage“) |
-| IKS | Interviewer fragt nach Vier-Augen-Prinzip | Nachweis der Kontrolle fehlt („woran sieht der Prüfer, dass kontrolliert wurde?“) | Interviewer fragt jetzt nach dem Nachweis |
-| Allgemeine Beschreibung | – | Fehlt ganz | Teil 1 der [Gliederung](GLIEDERUNG.md), einmalig durch Abteilungsleitung |
-| Technische Systemdoku, Betriebsdoku | – | Fehlt, Wissen liegt bei der IT | Teil 4 und 5, **Zulieferung IT**, Abfrageliste in der Gliederung |
-| Lenkung (Version, Freigabe, alte Fassungen) | Versionszeile im Interviewer | Keine Regel, wo und wie lange alte Fassungen liegen | Teil 0 der Gliederung |
-| Prozesslandkarte | – | Fehlt | [PROZESSLANDKARTE.md](PROZESSLANDKARTE.md), Vorschlag zum Anpassen |
+| Forderung | Abgedeckt durch |
+|---|---|
+| Anwenderdokumentation inkl. Belege und Ablage | Arbeitsanweisungen in Teil 2, erzeugt nach [ANLEITUNG.md](ANLEITUNG.md) |
+| IKS mit Nachweis der Kontrollen | Abschnitt 7 jeder Arbeitsanweisung → Kontrollmatrix in Teil 3 |
+| Allgemeine Beschreibung | Teil 1, einmalig durch Abteilungsleitung |
+| Technische Systemdoku, Betriebsdoku | Teil 4 und 5, **Zulieferung IT**, Frageliste in der Vorlage |
+| Lenkung (Version, Freigabe, alte Fassungen) | Teil 0 |
+| Prozesslandkarte | Kapitel 2.1, Vorschlag aus [PROZESSLANDKARTE.md](PROZESSLANDKARTE.md) |
 
 ## Vorgehen
 
 1. **Prozesslandkarte festlegen** (Abteilungsleitung, ca. 1 Stunde): Vorschlag anpassen,
    Kernprozesse markieren. Das legt zugleich den Nenner für INTENT-01 fest.
-2. **Pilot Monatsabschluss** wie geplant mit Interviewer und Schwärzer, jetzt mit den
-   zusätzlichen GoBD-Fragen.
+2. **Pilot Monatsabschluss** nach [ANLEITUNG.md](ANLEITUNG.md): aufnehmen, Transkript, Copilot Chat,
+   Screenshots, Word, Praxistest.
 3. **Teil 1 schreiben** (allgemeine Beschreibung, einmalig).
 4. **IT-Abfrage** für Teil 4 und 5 verschicken (Liste in der Gliederung).
 5. Kernprozesse nacheinander dokumentieren, jeweils mit Praxistest.

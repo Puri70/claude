@@ -15,17 +15,20 @@ Details: [intents/INTENT-01.md](intents/INTENT-01.md)
 
 | Baustein | Einstufung | Begründung |
 |---|---|---|
-| SAP-Schwärzer (PowerShell, lokal) | Grün | Läuft offline, nichts verlässt den Rechner |
-| Prozess-Interviewer (Copilot Chat) | Rot | Geschwärzte Screenshots und Beschreibungen aus dem Produktivmandanten gehen in den M365-Tenant |
+| Teams-Aufnahme mit Transkript | Gelb | Liegt im Firmen-OneDrive, zeigt aber Kundendaten auf dem Bildschirm. Nicht teilen, nach Freigabe löschen. |
+| Transkript → Copilot Chat | Gelb | Bleibt im M365-Vertrag mit Unternehmensdatenschutz. Nur ohne gesprochene Kundendaten. |
+| Screenshots schwärzen in Paint, Handbuch in Word | Grün | Lokal bzw. Ablage der Abteilung |
+| *ruht:* SAP-Schwärzer | Grün | Offline |
+| *ruht:* Prozess-Interviewer mit Screenshots in Copilot Chat | Rot | Screenshots aus dem Produktivmandanten im Tenant |
 
-Der Schwärzer ist die **Schutzschranke vor dem roten Datenweg**. Er muss deshalb mit einem Testsatz geprüft sein, bevor andere ihn nutzen.
+**Screenshots gehen nie in Copilot.** Damit entfällt der rote Datenweg.
 Zuletzt geprüft: 2026-10-17
 
 ## Fachliche Sonderregeln
 
 | Regel | Warum |
 |---|---|
-| Geschwärzt wird **lokal, bevor** ein Screenshot in Copilot eingefügt wird | Sonst sind Kundendaten schon im Tenant, bevor sie geschwärzt sind |
+| Geschwärzt wird **in Paint und als PNG gespeichert**, nie in Word | Schwarze Formen oder Zuschneiden in Word lassen das Original in der Datei. Es lässt sich wiederherstellen. |
 | Schwärzen per fest programmiertem Verfahren, **nie per generativer KI** | Generative KI malt Bilder neu: nicht nachvollziehbar, nicht verlässlich |
 | **Positivliste:** lesbar bleibt nur, was bekannt ist (Feldbezeichnungen, Spaltenköpfe, Titelleiste mit T-Code, Buttons) | Unbekanntes wird schwarz. Ein Fehler führt zu „zu viel geschwärzt“, nie zu einem Datenleck. |
 | Unkritische Werte (Buchungskreis, Belegart, Währung) dürfen auf die Positivliste | Sie helfen der Leserin und sind keine Kundendaten |
@@ -60,6 +63,10 @@ Zuletzt geprüft: 2026-10-17
 | 2026-10-17 | Kernlogik in C# (per Add-Type geladen), Oberfläche in PowerShell | Pixelarbeit ist in reinem PowerShell zu langsam. Der C#-Teil ist ohne Windows testbar. | Alles in PowerShell |
 | 2026-10-17 | Pilotprozess: **Monatsabschluss**, dokumentiert von der Abteilungsleitung selbst | Erst selbst erleben, was funktioniert, bevor Kolleginnen es nutzen | Sofort mit einer Kollegin starten |
 | 2026-10-17 | Schwärzen **pro Screenshot wählbar** (Häkchen + Klick-Freigabe) | Wunsch aus dem Monatsabschluss: Eingabewerte müssen sichtbar sein | Immer alles schwärzen |
+| 2026-10-17 | **Neu gedacht:** Weg A+B ohne eigene Werkzeuge. Prozess in Teams aufnehmen und erzählen (B), Screenshots aus Aufnahme oder leeren Masken, Schwärzen in Paint (A) | Schwärzer und Interviewer wurden gebaut, bevor klar war, wo es in der Praxis hakt. Erst mit Bordmitteln dokumentieren, dann gezielt automatisieren. | Weiter mit Schwärzer + Interviewer; fertige Programme (SAP Enable Now, Scribe): Kosten, Installation, fremde Cloud |
+| 2026-10-17 | Ergebnis zuerst **Word-Handbuch**, später SharePoint | Word ist sofort nutzbar und prüferfreundlich (PDF-Fassungen archivieren) | Sofort SharePoint-Seiten |
+| 2026-10-17 | Arbeitsanweisung aus dem **Transkript** per Copilot Chat, Rückfragen im Chat | Erzählen geht schneller als Schreiben. Copilot Chat haben alle. | Selbst schreiben; Interview-Agent |
+| 2026-10-17 | Schwärzer und Interviewer **ruhen**, werden nicht gelöscht | Können später helfen, wenn Paint zu mühsam wird | Löschen |
 | 2026-10-17 | Verfahrensdokumentation und QM-Handbuch **in einem** Handbuch | Gleiche Inhalte, eine Pflege. Interviewer fragt dafür zusätzlich nach Belegen, Ablage und Kontrollnachweis. | Zwei getrennte Werke |
 | 2026-10-17 | Prozesslandkarte zuerst als **Vorschlag** mit typischen SAP-Prozessen, Abteilungsleitung passt an | Schneller als bei null anfangen; legt zugleich den Nenner für INTENT-01 fest | Liste erst im Interview erheben |
 | 2026-10-17 | Einsprechen mit **`Win+H`** (Windows-Spracheingabe), Regel: nur Ablauf, keine Kundendaten | Funktioniert auf den Firmen-PCs (von der IT nicht per Richtlinie gesperrt) und in jedem Eingabefeld. Die Sprache geht an den Windows-Spracherkennungsdienst außerhalb des M365-Vertrags. Darum keine Kundendaten. | Word „Diktieren“ mit Umweg über Copy-Paste |
@@ -70,7 +77,8 @@ Zuletzt geprüft: 2026-10-17
 - **Texterkennung ist nicht perfekt.** Dunkle Schrift, die sie nicht findet, wird vorsichtshalber geschwärzt. Farbige Schrift (rote Fehlermeldungen, blaue Links) und weiße Schrift auf dunklem Grund nur, wenn sie erkannt wird. Deshalb: Vorschau immer ansehen, helles SAP-Design nutzen, Testsatz (`schwaerzer/TESTSATZ.md`) vor der Weitergabe abarbeiten.
 - **Originale außerhalb des Schwärzers:** Das Snipping Tool kann Originale selbst speichern, der Zwischenablage-Verlauf (`Win+V`) kann sie behalten. Beides liegt außerhalb des Werkzeugs und steht in der Anleitung.
 - **Kein Windows-Test aus der Entwicklungsumgebung:** Kernlogik und Skript-Syntax sind automatisch getestet, Texterkennung, Zwischenablage und Fenster nur auf einem echten Windows-PC. Der erste Lauf am Firmen-PC ist deshalb Teil des Tests.
-- **Keine Screenshots aus Videos.** Mit Bordmitteln nicht zuverlässig machbar. Screenshots kommen per `Win+Shift+S`.
+- **Screenshots aus Videos nur von Hand:** pausieren, `Win+Shift+S`. Automatisches Herausziehen von Bildern ist mit Bordmitteln nicht zuverlässig.
+- **Teams-Aufzeichnung und -Transkription** können von der IT abgeschaltet sein. Dann vorher klären.
 - **Keine automatische Ablage.** Bewusst Copy-Paste, siehe Entscheidungen.
 
 ## Aufgetretene Fehler

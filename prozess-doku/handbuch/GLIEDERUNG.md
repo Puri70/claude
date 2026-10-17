@@ -2,6 +2,8 @@
 
 Stand: 2026-10-17 · Version: 0.1 · Status: Entwurf
 
+Umgesetzt in [Handbuch-Buchhaltung-Vorlage.docx](Handbuch-Buchhaltung-Vorlage.docx). Diese Datei ist die Übersicht.
+
 Die Gliederung folgt den vier Teilen der GoBD (Rz. 151 ff.), ergänzt um Lenkung (Teil 0)
 und IKS (Teil 3). Die Spalte **„Liefert“** sagt, wer den Inhalt beisteuert.
 
@@ -9,7 +11,7 @@ und IKS (Teil 3). Die Spalte **„Liefert“** sagt, wer den Inhalt beisteuert.
 |---|---|---|---|---|
 | 0 | Lenkung des Handbuchs | Rz. 154 | 7.5 | Abteilungsleitung |
 | 1 | Allgemeine Beschreibung | Rz. 151–153 | 4.4, 5.3 | Abteilungsleitung |
-| 2 | Prozesse (Anwenderdokumentation) | Rz. 151–153 | 8.1 | Prozess-Interviewer + Kolleginnen |
+| 2 | Prozesse (Anwenderdokumentation) | Rz. 151–153 | 8.1 | Kolleginnen, nach [ANLEITUNG.md](ANLEITUNG.md) |
 | 3 | Internes Kontrollsystem | Rz. 100 ff. | 9.1 | Abteilungsleitung, aus Teil 2 |
 | 4 | Technische Systemdokumentation | Rz. 151–153 | 7.1.3 | IT |
 | 5 | Betriebsdokumentation | Rz. 103 ff., 151–153 | 7.5.3 | IT + Abteilungsleitung |
@@ -53,14 +55,14 @@ Einmal schreiben, selten ändern. Ca. 3–5 Seiten.
 ## Teil 2 · Prozesse (Anwenderdokumentation)
 
 Je Prozess eine **Arbeitsanweisung**, gegliedert nach der Prozesslandkarte, nicht nach
-Transaktionen. Erzeugt mit dem [Prozess-Interviewer](../interviewer/EINRICHTEN.md).
-Aufbau jeder Arbeitsanweisung (entspricht Teil A des Interviewers):
+Transaktionen. Erzeugt nach [ANLEITUNG.md](ANLEITUNG.md) (Teams-Aufnahme, Copilot Chat).
+Aufbau jeder Arbeitsanweisung:
 
 1. Zweck und Ergebnis
 2. Auslöser und Häufigkeit
 3. Beteiligte und Rollen
 4. Voraussetzungen
-5. Ablauf (Tabelle mit Bildnummern aus dem Schwärzer)
+5. Ablauf (Tabelle mit Bildnummern)
 6. Sonderfälle und Fehler
 7. Kontrollen und Nachweis → fließt in Teil 3
 8. Belege und Ablage → fließt in Teil 5
@@ -68,7 +70,7 @@ Aufbau jeder Arbeitsanweisung (entspricht Teil A des Interviewers):
 10. Offene Punkte
 11. Änderungshistorie
 
-Dazu je Prozess das **Ablaufdiagramm** aus Teil B des Interviewers (Visio Data Visualizer).
+Ablaufdiagramme sind für später vorgesehen, nicht für den Start.
 
 ## Teil 3 · Internes Kontrollsystem
 

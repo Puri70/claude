@@ -3,34 +3,31 @@
 Ziel ([INTENT-01](intents/INTENT-01.md)): Eine externe Person mit SAP-Zugang führt die Buchhaltungs-Kernprozesse
 anhand der Doku durch, ohne dass ihr jemand etwas erklären muss. Nach 6 Wochen ≥ 80 % der Kernprozesse ohne Rückfrage (heute 0 %).
 
+Ergebnis: ein **Handbuch Buchhaltung** in Word, das zugleich Verfahrensdokumentation (GoBD) und
+QM-Handbuch ist. Später wird es nach SharePoint übertragen.
+
 | Baustein | Wozu | Einstieg |
 |---|---|---|
-| **SAP-Schwärzer** | Schwärzt Kundendaten in Screenshots lokal, bevor sie eingefügt werden. Pro Bild wählbar, einzelne Werte per Klick freigebbar. | [schwaerzer/LIESMICH.md](schwaerzer/LIESMICH.md) |
-| **Prozess-Interviewer** | Agent in Copilot Chat: fragt nach, bis die Doku vollständig ist, und gibt Arbeitsanweisung und Diagramm-Tabelle aus | [interviewer/EINRICHTEN.md](interviewer/EINRICHTEN.md) |
-| **Handbuch** | Verfahrensdokumentation (GoBD) und QM-Handbuch in einem: Konzept, Gliederung, Prozesslandkarte | [handbuch/KONZEPT.md](handbuch/KONZEPT.md) |
-| Intent und Prüfbericht | Maßstab für jede Funktion | [intents/](intents/) |
+| **Handbuch-Vorlage** | Word-Vorlage mit Lenkung, Allgemeinem Teil, Muster-Arbeitsanweisung, IKS, IT-Fragen, Anhang | [handbuch/Handbuch-Buchhaltung-Vorlage.docx](handbuch/Handbuch-Buchhaltung-Vorlage.docx) |
+| **Anleitung** | So entsteht eine Arbeitsanweisung: Teams-Aufnahme, Transkript, Copilot Chat, Screenshots in Paint schwärzen, Praxistest | [handbuch/ANLEITUNG.md](handbuch/ANLEITUNG.md) |
+| Text für Copilot Chat | Macht aus dem Transkript Arbeitsanweisung, Bildliste und Rückfragen | [handbuch/PROMPT-TRANSKRIPT.txt](handbuch/PROMPT-TRANSKRIPT.txt) |
+| Konzept und Recherche | Was GoBD und ISO 9001 verlangen, mit Quellen | [handbuch/KONZEPT.md](handbuch/KONZEPT.md) |
+| Prozesslandkarte | Vorschlag zum Anpassen | [handbuch/PROZESSLANDKARTE.md](handbuch/PROZESSLANDKARTE.md) |
 | Warum es so ist | Entscheidungen, Regeln, Grenzen. Bei jeder Änderung zuerst lesen. | [WARUM.md](WARUM.md) |
 
 ## Ablauf einer Dokumentation
 
 ```
-SAP  ──Win+Shift+S──▶  Schwärzer (Vorschau, Häkchen, Klick-Freigabe)  ──Strg+V──▶  Prozess-Interviewer (Copilot Chat)
-                              │                                                          │
-                              ▼                                                          ▼
-              Dokumente\SAP-Schwaerzer\<Datum>\Bild-NN.png          Arbeitsanweisung + Diagramm-Tabelle
-                              └──────────────────────┬───────────────────────────────────┘
-                                                     ▼
-                                Word-Vorlage  +  Excel → Visio Data Visualizer
-                                                     ▼
-                                Handbuch Teil 2 (Gliederung siehe handbuch/)
-                                                     ▼
-                                Praxistest mit externer Person (Rückfragen zählen)
+Teams: Prozess durchführen und erzählen ──▶ Transkript ──▶ Copilot Chat: Arbeitsanweisung + Bildliste + Rückfragen
+                 │                                                           │
+                 ▼                                                           ▼
+     Video: an die Bild-Stellen springen ──▶ Paint: schwärzen, PNG ──▶ Word: Kapitel 2 ──▶ Praxistest ──▶ Freigabe
 ```
 
-## Tests der Kernlogik (Entwicklung)
+## Ruht: eigene Werkzeuge
 
-```
-dotnet run --project schwaerzer/tests
-```
+SAP-Schwärzer ([schwaerzer/](schwaerzer/)) und Prozess-Interviewer ([interviewer/](interviewer/)) wurden gebaut,
+aber nie eingesetzt. Sie ruhen, bis sich in der Praxis zeigt, dass das Schwärzen in Paint oder das
+Erzeugen aus dem Transkript nicht reicht.
 
-Kompiliert mit C# 5, wie Windows PowerShell 5.1 auf den Arbeitsplätzen.
+Die Word-Vorlage wird mit `node handbuch/vorlage-erzeugen.js <Ziel.docx>` erzeugt (npm-Paket `docx`).

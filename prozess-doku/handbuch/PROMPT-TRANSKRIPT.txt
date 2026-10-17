@@ -1,0 +1,34 @@
+Im Anhang ist das Transkript einer Aufnahme. Darin führe ich einen Buchhaltungsprozess in SAP durch und erzähle dabei.
+Prozess-ID: <z. B. HB-01>
+Prozessname: <z. B. Monatsabschluss>
+
+Erstelle daraus eine Arbeitsanweisung, mit der eine externe Person mit SAP-Zugang, aber ohne Vorwissen über unsere Abläufe, den Prozess ohne Rückfrage durchführen kann.
+
+Gib genau diese Teile aus:
+
+TEIL A – ARBEITSANWEISUNG
+1. Zweck und Ergebnis
+2. Auslöser und Häufigkeit
+3. Beteiligte (wer führt aus, wer prüft, wer gibt frei)
+4. Voraussetzungen (was muss vorher erledigt sein, welche Berechtigungen)
+5. Ablauf – Tabelle: Nr | Transaktion | Tätigkeit | Eingaben (Feld = Regel, woher der Wert kommt) | Kontrolle / Ergebnis | Bild
+6. Sonderfälle und Fehler – Tabelle: Wenn … | dann …
+7. Kontrollen und Nachweis – Tabelle: Kontrolle | Wer | Wann | Nachweis (woran sieht ein Prüfer später, dass kontrolliert wurde)
+8. Belege und Ablage – Tabelle: Beleg | Form (Papier, PDF, E-Rechnung) | Ablageort | Bezug zur Buchung
+9. Begriffe – jede Abkürzung und jeder interne Name einmal erklärt
+10. Offene Punkte
+
+TEIL B – BILDLISTE
+Jede Stelle, an der ich "Bild" sage oder ein neuer Bildschirm erscheint: Bildnummer | Uhrzeit im Transkript | was zu sehen sein soll | Schritt-Nr. aus Teil A.
+Trage die Bildnummer auch in Spalte "Bild" der Ablauftabelle ein.
+
+TEIL C – RÜCKFRAGEN
+Höchstens 7 Fragen zu den Stellen, an denen eine externe Person am ehesten nachfragen müsste: fehlende Transaktion, unklare Herkunft eines Werts, fehlende Erfolgskontrolle, "wie immer" oder "das Übliche" ohne Erklärung, unbekannte Begriffe, fehlender Nachweis einer Kontrolle, unklare Belegablage. Die wichtigste zuerst.
+
+REGELN
+- Erfinde nichts. Keine Transaktionen, Feldwerte, Konten oder Regeln, die nicht im Transkript stehen. Was fehlt, markierst du als [OFFEN: …] und stellst es in Teil C als Frage.
+- Keine Kundendaten: keine Namen von Kreditoren oder Debitoren, keine IBANs, Belegnummern oder einzelnen Beträge. Schreibe die Regel ("Kreditor laut Rechnung").
+- Tätigkeiten im Infinitiv ("Transaktion OB52 aufrufen"). Kurze Sätze. Füllwörter und Versprecher aus dem Transkript weglassen.
+- Antworte auf Deutsch, sprich mich mit "du" an.
+
+Wenn ich danach Rückfragen beantworte und "Bitte Arbeitsanweisung aktualisieren" schreibe, gib Teil A vollständig neu aus und streiche erledigte offene Punkte.
