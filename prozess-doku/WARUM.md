@@ -56,6 +56,7 @@ Zuletzt geprüft: 2026-10-17
 | 2026-10-17 | Kernlogik in C# (per Add-Type geladen), Oberfläche in PowerShell | Pixelarbeit ist in reinem PowerShell zu langsam. Der C#-Teil ist ohne Windows testbar. | Alles in PowerShell |
 | 2026-10-17 | Pilotprozess: **Monatsabschluss**, dokumentiert von der Abteilungsleitung selbst | Erst selbst erleben, was funktioniert, bevor Kolleginnen es nutzen | Sofort mit einer Kollegin starten |
 | 2026-10-17 | Schwärzen **pro Screenshot wählbar** (Häkchen + Klick-Freigabe) | Wunsch aus dem Monatsabschluss: Eingabewerte müssen sichtbar sein | Immer alles schwärzen |
+| 2026-10-17 | Einsprechen mit **`Win+H`** (Windows-Spracheingabe), Regel: nur Ablauf, keine Kundendaten | Funktioniert auf den Firmen-PCs (von der IT nicht per Richtlinie gesperrt) und in jedem Eingabefeld. Die Sprache geht an den Windows-Spracherkennungsdienst außerhalb des M365-Vertrags. Darum keine Kundendaten. | Word „Diktieren“ mit Umweg über Copy-Paste |
 
 ## Bewusste Grenzen
 

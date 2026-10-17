@@ -30,8 +30,9 @@ Fehlt „Agent erstellen“, hat die IT das Erstellen von Agenten für Copilot C
 1. **SAP-Schwärzer starten** (Schild-Symbol unten rechts).
 2. Im Agenten **„Monatsabschluss dokumentieren“** anklicken.
 3. Erzählen, was du tust, Schritt für Schritt:
-   - **Einsprechen:** über das Mikrofon in Copilot (falls vorhanden) oder in Word mit **Start → Diktieren** und den Text dann hineinkopieren.
-     Die Windows-Spracheingabe (`Win+H`) nutzt einen anderen Microsoft-Dienst als euer Microsoft 365. Bitte vorher mit der IT klären, ob sie für Firmendaten erlaubt ist.
+   - **Einsprechen:** ins Eingabefeld des Chats klicken, **`Win+H`** drücken und losreden. Nochmal `Win+H` beendet das Diktat.
+     **Regel: Den Ablauf einsprechen, keine Kundendaten.** Also „Kreditor laut Rechnung eintragen“, nicht „Kreditor 300417, Firma Müller“.
+     Hintergrund: `Win+H` schickt die Sprache an den Spracherkennungsdienst von Windows. Der gehört nicht zu eurem Microsoft-365-Vertrag, und Microsoft darf die Spracheingaben zur Verbesserung des Dienstes nutzen.
    - **Screenshots:** `Win+Shift+S` → im Vorschaufenster prüfen, Werte zum Eingeben per Klick freigeben → „Übernehmen“ → `Strg+V` in den Chat.
      Der Schwärzer meldet „Gespeichert als Bild-03“. Schreib die Nummer dazu, z. B. „Bild-03: so sieht die Selektion aus“.
 4. Der Agent fragt nach, was fehlt. Antworte einfach, auch stichpunktartig.
