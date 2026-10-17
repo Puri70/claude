@@ -1,0 +1,336 @@
+# Feldnamen.txt – alles, was hier steht, bleibt im Screenshot LESBAR.
+# Alles andere wird geschwärzt.
+#
+# Regeln:
+#  - Ein Eintrag pro Zeile, genau so, wie er in SAP steht (Groß/klein und Satzzeichen egal).
+#  - Mehrere Wörter pro Zeile sind erlaubt, z. B. "Betrag in Hauswährung".
+#  - NIEMALS Werte eintragen: keine Kreditorennummern, Namen, IBANs, Beträge.
+#  - Zeilen mit # sind Kommentare.
+#  - Nach dem Speichern: Rechtsklick auf das Schild-Symbol > "Feldnamen neu laden".
+
+# --- Menüs, Knöpfe, Statusleiste -------------------------------------------
+SAP Easy Access
+Beleg
+Bearbeiten
+Springen
+Zusätze
+Einstellungen
+Umfeld
+System
+Hilfe
+Liste
+Sicht
+Programm
+Ausführen
+Ausführen im Hintergrund
+Zurück
+Beenden
+Abbrechen
+Sichern
+Buchen
+Simulieren
+Merken
+Weiter
+Ja
+Nein
+Drucken
+Suchen
+Sortieren
+Filter
+Summe
+Zwischensumme
+Layout
+Exportieren
+Details
+Mehr
+Menü
+Favoriten
+Dynamische Selektionen
+Mehrfachselektion
+Variante
+Varianten
+Selektionen
+Selektionsoptionen
+Optionen
+Protokoll
+Meldungen
+Hinweis
+Warnung
+Fehler
+wurde
+wurde gebucht
+wurde gesichert
+wurde vorerfasst
+im Buchungskreis
+gebucht
+vorerfasst
+
+# --- Bildtitel --------------------------------------------------------------
+Kreditorenrechnung erfassen
+Kreditorengutschrift erfassen
+Eingangsrechnung erfassen
+Kreditorenposten anzeigen
+Debitorenposten anzeigen
+Sachkontenposten anzeigen
+Beleg anzeigen
+Beleg ändern
+Buchungsperioden pflegen
+Fremdwährungsbewertung
+Automatischer Zahlungsverkehr
+Zahlungsprogramm
+Saldenanzeige
+
+# --- Kreditorenrechnung (FB60, MIRO) --------------------------------------
+Grunddaten
+Zahlung
+Steuer
+Notiz
+Lokale Währung
+Kreditor
+Lieferant
+Rechnungsdatum
+Referenz
+Buchungsdatum
+Belegart
+Betrag
+Steuer rechnen
+Steuerbetrag
+Steuerkennzeichen
+Text
+Zahlungsbedingung
+Zahlungsbedingungen
+Zahlungsbed.
+Basisdatum
+Fälligkeit
+Nettofälligkeit
+Skonto
+Skontobetrag
+Skontobasis
+Zahlweg
+Zahlsperre
+Hausbank
+Partnerbank
+Buchungskreis
+Buchungskreiswährung
+Währung
+EUR
+USD
+CHF
+GBP
+Vorsteuer
+Mehrwertsteuer
+Saldo
+Sachkonto
+Kurztext
+Soll/Haben
+Betrag in Belegwährung
+Betrag in Hauswährung
+Kostenstelle
+Auftrag
+Profitcenter
+Zuordnung
+Geschäftsbereich
+Vorgang
+Rechnung
+Gutschrift
+Nachbelastung
+Nachträgliche Belastung
+Bestellbezug
+Bestellung
+Bestellnummer
+Lieferschein
+Wareneingang
+Menge
+Material
+Position
+Positionstext
+Werk
+Erfasser
+
+# --- Belege und Posten (FB03, FBL1N, FBL3N, FBL5N) -------------------------
+Belegnummer
+Belegnr
+Belegdatum
+Geschäftsjahr
+Periode
+Buchungsperiode
+Ausgleich
+Ausgleichsdatum
+Ausgleichsbeleg
+Status
+Offene Posten
+Ausgeglichene Posten
+Alle Posten
+Stichtag
+Offen zum Stichtag
+Ausgabe
+Postenart
+Normale Posten
+Merkposten
+Statistische Posten
+Kreditorenkonto
+Debitorenkonto
+Debitor
+Kunde
+Konto
+Art
+BuKr
+Betrag in HW
+Hauswährung
+HWähr
+Belegwährung
+Netto-Fälligkeit
+Symbol
+
+# --- Stammdaten (BP, XK03, FK03) -------------------------------------------
+Geschäftspartner
+Rolle
+Gruppierung
+Anrede
+Name
+Name 1
+Name 2
+Suchbegriff
+Straße
+Hausnummer
+Postleitzahl
+Ort
+Land
+Region
+Telefon
+E-Mail
+IBAN
+BIC
+Bankschlüssel
+Bankkonto
+Kontoinhaber
+Umsatzsteuer-Id.Nr.
+Steuernummer
+Abstimmkonto
+Mahnverfahren
+Mahnsperre
+Toleranzgruppe
+Sortierschlüssel
+
+# --- Zahlungslauf (F110) ---------------------------------------------------
+Lauf
+Ausführungsdatum
+Identifikation
+Parameter
+Druck/Datenträger
+Zahlungsvorschlag
+Zahlungslauf
+Nächster Buchungstermin
+Buchungskreise
+Zahlwege
+Kreditoren
+Debitoren
+Freie Selektion
+Zusatzprotokoll
+
+# --- Monatsabschluss -------------------------------------------------------
+Buchungsperioden
+Von Periode
+Bis Periode
+Kontenart
+Bewertung
+Bewertungsstichtag
+Bewertungsbereich
+Bewertungsmethode
+Fremdwährungsbewertung
+Testlauf
+Echtlauf
+Testmodus
+Echtbuchung
+Buchungen erzeugen
+Ausgabeliste
+Detailliste
+Hintergrundverarbeitung
+Verarbeitungsart
+Abrechnungsperiode
+Abrechnungsart
+Zyklus
+Segment
+Kostenrechnungskreis
+Kostenart
+Plan/Ist
+Version
+Startdatum
+Anlage
+Anlagen
+Planabschreibung
+Abschreibungslauf
+Abgrenzung
+Abgrenzungsbuchung
+Stornobuchungsdatum
+Stornogrund
+Umbuchung
+Umgliederung
+Saldovortrag
+Ledger
+Bilanz
+GuV
+Sachkonten
+Kontenplan
+Bilanzstruktur
+Berichtsjahr
+Berichtsperiode
+Vergleichsjahr
+Vergleichsperiode
+Dauerbuchung
+Dauerbuchungen
+WE/RE-Konto
+Maschinelles Ausgleichen
+
+# --- Transaktionscodes -----------------------------------------------------
+FB01
+FB02
+FB03
+FB08
+FB50
+FB60
+FB65
+FB70
+FB75
+FBL1N
+FBL3N
+FBL5N
+FAGLL03
+FS10N
+FK10N
+FD10N
+FAGLB03
+F-02
+F-28
+F-32
+F-44
+F-53
+F-58
+F110
+F150
+F.13
+F.14
+F.19
+F.81
+MIRO
+MIR4
+MIR7
+MIGO
+MR11
+ME23N
+XK03
+FK03
+OB52
+FAGL_FCV
+FAGLF101
+FAGLGVTR
+FBS1
+FBD1
+AFAB
+ASKB
+AJAB
+KSU5
+KSV5
+KO88
+MMPV
+S_ALR_87012284
