@@ -7,6 +7,7 @@ anhand der Doku durch, ohne dass ihr jemand etwas erklären muss. Nach 6 Wochen 
 |---|---|---|
 | **SAP-Schwärzer** | Schwärzt Kundendaten in Screenshots lokal, bevor sie eingefügt werden. Pro Bild wählbar, einzelne Werte per Klick freigebbar. | [schwaerzer/LIESMICH.md](schwaerzer/LIESMICH.md) |
 | **Prozess-Interviewer** | Agent in Copilot Chat: fragt nach, bis die Doku vollständig ist, und gibt Arbeitsanweisung und Diagramm-Tabelle aus | [interviewer/EINRICHTEN.md](interviewer/EINRICHTEN.md) |
+| **Handbuch** | Verfahrensdokumentation (GoBD) und QM-Handbuch in einem: Konzept, Gliederung, Prozesslandkarte | [handbuch/KONZEPT.md](handbuch/KONZEPT.md) |
 | Intent und Prüfbericht | Maßstab für jede Funktion | [intents/](intents/) |
 | Warum es so ist | Entscheidungen, Regeln, Grenzen. Bei jeder Änderung zuerst lesen. | [WARUM.md](WARUM.md) |
 
@@ -20,6 +21,8 @@ SAP  ──Win+Shift+S──▶  Schwärzer (Vorschau, Häkchen, Klick-Freigabe)
                               └──────────────────────┬───────────────────────────────────┘
                                                      ▼
                                 Word-Vorlage  +  Excel → Visio Data Visualizer
+                                                     ▼
+                                Handbuch Teil 2 (Gliederung siehe handbuch/)
                                                      ▼
                                 Praxistest mit externer Person (Rückfragen zählen)
 ```

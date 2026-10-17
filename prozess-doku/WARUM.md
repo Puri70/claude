@@ -32,6 +32,10 @@ Zuletzt geprüft: 2026-10-17
 | **Feste schwarze Balken**, kein Weichzeichner | Weichgezeichneter Text lässt sich teilweise zurückrechnen |
 | Wo möglich **leere Masken und Selektionsbilder** fotografieren | Zeigen alle Feldnamen ohne Kundendaten. Der Schwärzer ist Sicherheitsnetz, nicht die einzige Maßnahme. |
 | Handbuch **gegliedert nach Prozessen**, nicht nach Transaktionen | Eine Transaktion (z. B. FB50) kommt in mehreren Prozessen vor. Neue Kolleginnen suchen nach Aufgaben, nicht nach T-Codes. |
+| **Ein Handbuch** für Verfahrensdokumentation und QM, gegliedert nach den vier GoBD-Teilen plus Lenkung und IKS | Prüfer und neue Kolleginnen lesen dieselben Arbeitsanweisungen. Doppelte Pflege führt zu zwei Wahrheiten. |
+| Jede freigegebene Fassung bleibt als PDF erhalten, **mindestens 10 Jahre** | GoBD verlangt, dass Änderungen der Verfahrensdokumentation historisch nachvollziehbar sind |
+| Technische System- und Betriebsdokumentation **liefert die IT**, die Buchhaltung verweist nur | Die Buchhaltung kennt Datensicherung und Transporte nicht aus erster Hand. Selbst geschrieben wäre es geraten. |
+| Rechtsangaben (Randziffern, Fristen) vor der Freigabe **von Steuerberatung/WP gegenlesen** lassen | Recherche stützt sich auf Fachbeiträge, nicht auf den Volltext der BMF-Schreiben |
 | Ein Kernprozess zählt erst als „dokumentiert“, wenn der **Praxistest bestanden** ist | „Anleitung existiert“ sagt nichts darüber, ob jemand damit arbeiten kann |
 | Nach jedem Screenshot **Vorschau mit Häkchen** „Kundendaten schwärzen“ (vorab an) | Im Monatsabschluss müssen Eingabewerte (Periode, Geschäftsjahr …) sichtbar sein, Kundendaten nicht. Die Entscheidung trifft die Kollegin pro Bild. |
 | Einzelne Balken **per Klick freigeben** statt Werte in die Feldliste schreiben | Ein Wert in der Feldliste wäre in *jedem* Bild lesbar. Die Freigabe per Klick gilt nur für dieses eine Bild. |
@@ -56,6 +60,8 @@ Zuletzt geprüft: 2026-10-17
 | 2026-10-17 | Kernlogik in C# (per Add-Type geladen), Oberfläche in PowerShell | Pixelarbeit ist in reinem PowerShell zu langsam. Der C#-Teil ist ohne Windows testbar. | Alles in PowerShell |
 | 2026-10-17 | Pilotprozess: **Monatsabschluss**, dokumentiert von der Abteilungsleitung selbst | Erst selbst erleben, was funktioniert, bevor Kolleginnen es nutzen | Sofort mit einer Kollegin starten |
 | 2026-10-17 | Schwärzen **pro Screenshot wählbar** (Häkchen + Klick-Freigabe) | Wunsch aus dem Monatsabschluss: Eingabewerte müssen sichtbar sein | Immer alles schwärzen |
+| 2026-10-17 | Verfahrensdokumentation und QM-Handbuch **in einem** Handbuch | Gleiche Inhalte, eine Pflege. Interviewer fragt dafür zusätzlich nach Belegen, Ablage und Kontrollnachweis. | Zwei getrennte Werke |
+| 2026-10-17 | Prozesslandkarte zuerst als **Vorschlag** mit typischen SAP-Prozessen, Abteilungsleitung passt an | Schneller als bei null anfangen; legt zugleich den Nenner für INTENT-01 fest | Liste erst im Interview erheben |
 | 2026-10-17 | Einsprechen mit **`Win+H`** (Windows-Spracheingabe), Regel: nur Ablauf, keine Kundendaten | Funktioniert auf den Firmen-PCs (von der IT nicht per Richtlinie gesperrt) und in jedem Eingabefeld. Die Sprache geht an den Windows-Spracherkennungsdienst außerhalb des M365-Vertrags. Darum keine Kundendaten. | Word „Diktieren“ mit Umweg über Copy-Paste |
 
 ## Bewusste Grenzen
