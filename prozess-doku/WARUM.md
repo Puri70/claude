@@ -41,6 +41,11 @@ Zuletzt geprüft: 2026-10-17
 | Dunkle, **farblose** Schrift ohne Texterkennung wird geschwärzt, farbige nicht | Fängt Werte ab, die die Texterkennung übersieht, ohne Symbole und Schaltflächen zu schwärzen |
 | Übernommene Bilder werden **nummeriert gespeichert** (Bild-01 …), Originale nie | Die Bilder werden später in Word gebraucht. Der Interviewer verweist auf die Nummern. |
 | Der Interviewer **erfindet nichts** und übernimmt keine Kundendaten in die Doku | Plausibel klingende, aber falsche Transaktionen oder Werte wären schlimmer als eine offene Lücke |
+| Rohdaten werden **vor** der Bearbeitung abgeschlossen (schreibgeschützt, Prüfsumme) | Jede freigegebene Fassung muss auf unveränderte Rohdaten zurückführbar sein |
+| Finale Freigabe **verweigert**, wenn die Arbeitsanweisung nach der fachlichen Freigabe geändert wurde | Die Leitung gibt nur frei, was die Kollegin bestätigt hat |
+| Vier-Augen-Ausnahme nur **mit Begründung**, sichtbar im Protokoll; abschaltbar | Im Pilot dokumentiert und gibt die Abteilungsleitung selbst frei |
+| Änderungen an Freigegebenem nur über einen **neuen Entwurf** (Version 2.0 …) | Freigegebene Fassungen bleiben unverändert erhalten |
+| Prüfsummen-Pfade **relativ** mit `/` | Protokolle bleiben nach dem Umzug nach SharePoint gültig |
 
 ## Getroffene Entscheidungen
 
@@ -56,6 +61,10 @@ Zuletzt geprüft: 2026-10-17
 | 2026-10-17 | Kernlogik in C# (per Add-Type geladen), Oberfläche in PowerShell | Pixelarbeit ist in reinem PowerShell zu langsam. Der C#-Teil ist ohne Windows testbar. | Alles in PowerShell |
 | 2026-10-17 | Pilotprozess: **Monatsabschluss**, dokumentiert von der Abteilungsleitung selbst | Erst selbst erleben, was funktioniert, bevor Kolleginnen es nutzen | Sofort mit einer Kollegin starten |
 | 2026-10-17 | Schwärzen **pro Screenshot wählbar** (Häkchen + Klick-Freigabe) | Wunsch aus dem Monatsabschluss: Eingabewerte müssen sichtbar sein | Immer alles schwärzen |
+| 2026-10-17 | Ablage in **SharePoint/Teams**, nicht in einem Claude-Artefakt | Firmendaten bleiben im M365-Tenant, Versionierung und Aufbewahrung (Verfahrensdoku 10 Jahre) sind Standard | Claude-Cockpit als Ablage, Netzlaufwerk |
+| 2026-10-17 | **Zuerst lokal** bauen (Rechner mit Office 2016, ohne M365), Struktur identisch zur späteren SharePoint-Ablage | Erst ausprobieren, dann umziehen. Umzug ändert nur den Speicherort. | Direkt in SharePoint |
+| 2026-10-17 | Freigabe vorerst **im Werkzeug** (Status, Person, Zeit, Prüfsummen), Power Automate offen | Ob Power Automate genutzt werden darf, ist noch zu klären | Status-Spalte von Hand |
+| 2026-10-17 | „Reproduzierbar“ heißt **nachvollziehbar**: Rohdaten, Agent-Version, KI-Rohausgabe und Bearbeitung werden mit Prüfsummen verknüpft | Eine KI erzeugt bei gleicher Eingabe nicht exakt denselben Text | Neu erzeugen und vergleichen |
 | 2026-10-17 | Einsprechen mit **`Win+H`** (Windows-Spracheingabe), Regel: nur Ablauf, keine Kundendaten | Funktioniert auf den Firmen-PCs (von der IT nicht per Richtlinie gesperrt) und in jedem Eingabefeld. Die Sprache geht an den Windows-Spracherkennungsdienst außerhalb des M365-Vertrags. Darum keine Kundendaten. | Word „Diktieren“ mit Umweg über Copy-Paste |
 
 ## Bewusste Grenzen
